@@ -66,7 +66,12 @@ ul, ol {
     text-align: center;
     cursor: pointer;
     display: inline-block;
+    action
     }
+
+.button:hover {
+    background-color:blue;
+}
     
 header {
     background-color: var(--c-darkblue);    
@@ -100,7 +105,8 @@ main {
 
 .hero {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    
     h1 {
         color: var(--c-white);
         font-size: 5vw;
@@ -114,6 +120,7 @@ main {
 
 .heroa {
     margin: 40px;
+    flex: 1;
 }
 .features {
     h2 { margin-top: 20px;
@@ -131,30 +138,34 @@ main {
     padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-
 }
+
 .card {
     margin:20px
 }
 
-.quote { display: flex;
-    justify-content: space-evenly;
+.quote { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: var(--c-lightwhite) ;
     padding: 20px;
     blockquote {
-        font-size: 32px;
+        font-size: 28px;
         font-weight: 300;
         text-align: center;
     }
-    p { font-size: 32px;
+    p { font-size: 16px;
         text-align: right;
+        margin-right: 20px;
         
     }
 } 
-.quoteunit {
+.quoteunit { 
+    flex: 1;
     background-color: var(--c-white);
     margin: 10px;
-    padding: 30px;
+    padding: 5px;
     border-radius: 20px;
 
 }
